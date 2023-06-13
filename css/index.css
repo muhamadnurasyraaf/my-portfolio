@@ -138,6 +138,7 @@ progress::-webkit-progress-value{
     .title{
         line-height: 1;
     }
+   
 }
 .skill{
     display: grid;
@@ -148,5 +149,16 @@ progress::-webkit-progress-value{
 @media screen and (max-width:600px) {
     .myImg{
         visibility: hidden;
+    }
+    .skill{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+    .title{
+        margin: auto;
+        max-width: fit-content;
     }
 }
