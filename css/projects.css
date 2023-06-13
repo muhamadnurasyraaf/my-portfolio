@@ -100,3 +100,9 @@ a{
 .ong{
     color: yellow;
 }
+@media screen and (max-width:768px){
+    .projects{
+        display: flex;
+        flex-direction: column;
+    }
+}
