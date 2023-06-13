@@ -54,5 +54,21 @@ a{
     color: #ff004f;
 }
 .title{
-    margin-top:7em;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top:4em;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.ws{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.ws div i{
+   font-size: 2rem;
 }
