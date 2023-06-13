@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,400;1,500&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: #161618;
+    color: #fafafa;
+    font-family: 'Montserrat',sans-serif;
+    max-width: fit-content;
+}
+*{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.25rem;
+    align-items: center;
+    font-weight: bold;
+    background-color: #161618;
+    padding: 1.25em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    flex-wrap: wrap;
+}
+.left{
+    font-family: 'Poppins',sans-serif;
+}
+span{
+    color: #ff004f;
+}
+ul{
+    display: flex;
+    gap:1em;
+}
+li{
+    list-style-type:none ;
+}
+a{
+    text-decoration: none;
+    color: #fafafa; 
+}
+.hire-btn{
+    background-color: #ff004f;
+    padding: 1em 2em;
+    border-radius: 0.4em;
+}
+.landing{
+    display: flex;
+    margin:15em auto;
+    justify-content: space-between;
+}
+.img-row{
+    display: flex;
+    align-items: center;
+}
+.myImg{
+    border-radius: 50%;
+    width: 20%;
+    transform: translateX(300%);
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    line-height: 0.3;
+    max-width: fit-content;
+}
+.title #dev{
+    text-decoration: line-through;
+}
+h1{
+    font-size: 3rem;
+}
+.mid a{
+    transition: all 0.3s;
+}
+.mid a:hover{
+    color: #ff004f;
+}
+.position{
+    text-decoration: overline;
+}
+
+.section-title{
+    margin-top: 4em;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.edu{
+    font-family:'Poppins',sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.journey{
+    margin-left: 4em;
+    max-width: 50%;
+}
+.aboutme{
+    display: flex;
+    flex-direction: column;
+}
+.education{
+    margin: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+.grade{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    font-weight: bold;
+}
+.container{
+    margin: 2em 0;
+}
+progress{
+    border: 2px solid gray;
+    width: 30%;
+    border-radius: 2em;
+}
+progress::-webkit-progress-bar{
+    border-radius: 2em;
+    background-color: #fafafa;
+}
+progress::-webkit-progress-value{
+    background-color: #ff004f;
+    border-radius: 2em;
+}
+@media screen and (max-width:1472px){
+    h1{
+        font-size: 2rem;
+        
+    }
+    .title{
+        line-height: 1;
+    }
+}
+.skill{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 4em auto;
+    width: 80%;
+}
+@media screen and (max-width:600px) {
+    .myImg{
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,400;1,500&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: #161618;
+    color: #fafafa;
+    font-family: 'Montserrat',sans-serif;
+    max-width: fit-content;
+}
+*{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.25rem;
+    align-items: center;
+    font-weight: bold;
+    background-color: #161618;
+    padding: 1.25em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    flex-wrap: wrap;
+}
+.left{
+    font-family: 'Poppins',sans-serif;
+}
+span{
+    color: #ff004f;
+}
+ul{
+    display: flex;
+    gap:1em;
+}
+li{
+    list-style-type:none ;
+}
+a{
+    text-decoration: none;
+    color: #fafafa; 
+}
+.hire-btn{
+    background-color: #ff004f;
+    padding: 1em 2em;
+    border-radius: 0.4em;
+}
+.mid a{
+    transition: all 0.4s;
+}
+.mid a:hover{
+    color: #ff004f;
+}
