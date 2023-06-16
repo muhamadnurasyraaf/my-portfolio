@@ -76,9 +76,33 @@ h1{
 .mid a{
     transition: all 0.3s;
 }
-.mid a:hover{
+.mid a:hover:not(.active){
     color: #ff004f;
 }
+.active::after{
+    content: ' ';
+    display: block;
+    height: 3px;
+    border-radius: 0.4em;
+    width: 100%;
+    background-color:#ff004f;
+}
+.active{
+    color: #ff004f;
+}
+.mid a:not(.active)::after{
+    content: ' ';
+    display: block;
+    height: 3px;
+    border-radius: 0.4em;
+    width: 0;
+    background-color:#ff004f;
+    transition: all 0.4s ease-in;
+}
+.mid a:hover::after{
+    width: 100%;
+}
+
 .position{
     text-decoration: overline;
 }

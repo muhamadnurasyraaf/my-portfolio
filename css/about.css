@@ -47,11 +47,34 @@ a{
     padding: 1em 2em;
     border-radius: 0.4em;
 }
+.active{
+    color: #ff004f;
+}
+.active::after{
+    content: ' ';
+    display: block;
+    height: 3px;
+    border-radius: 0.4em;
+    width: 100%;
+    background-color:#ff004f;
+}
 .mid a{
     transition: all 0.4s;
 }
-.mid a:hover{
+.mid a:not(.active):hover{
     color: #ff004f;
+}
+.mid a:not(.active)::after{
+    content: ' ';
+    display: block;
+    height: 3px;
+    border-radius: 0.4em;
+    width: 0;
+    background-color:#ff004f;
+    transition: all 0.4s ease-in;
+}
+.mid a:hover::after{
+    width: 100%;
 }
 h3{
     margin-top: 5em;

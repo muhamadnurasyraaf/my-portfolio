@@ -50,8 +50,31 @@ a{
 .mid a{
     transition: all 0.4s;
 }
-.mid a:hover{
+.mid a:hover:not(.active){
     color: #ff004f;
+}
+.active{
+    color: #ff004f;
+}
+.active::after{
+    content: ' ';
+    display: block;
+    height: 3px;
+    border-radius: 0.4em;
+    width: 100%;
+    background-color:#ff004f;
+}
+.mid a:not(.active)::after{
+    content: ' ';
+    display: block;
+    height: 3px;
+    border-radius: 0.4em;
+    width: 0;
+    background-color:#ff004f;
+    transition: all 0.4s ease-in;
+}
+.mid a:hover::after{
+    width: 100%;
 }
 .title{
     font-weight: bold;
@@ -71,4 +94,44 @@ a{
 }
 .ws div i{
    font-size: 2rem;
+}
+.form{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 1em 2em;
+    border-radius: 2em;
+}
+input{
+   padding: 1em 2em; 
+   border-radius: 0.4em;
+}
+textarea{
+    border-radius: 0.5em;
+    padding: 1em;
+}
+input,textarea{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1rem;
+}
+.form p{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.submit-btn{
+    font-family: 'Poppins',sans-serif;
+    cursor: pointer;
+    color: #fafafa;
+    background-color: #ff004f;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 1em 2em;
+    border-radius:0.5em;
+}
+.submit-btn:hover{
+    color: #ff004f;
+    background-color: #161618;
 }

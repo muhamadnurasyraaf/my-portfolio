@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,400;1,500&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #161618;
+    color: #fafafa;
+    font-family: 'Montserrat',sans-serif;
+    display: grid;
+    place-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top:15%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    padding: 2em 4em;
+    background-color: #272626;
+    border-radius:2em ;
+}
+form input:not(.submit-btn){
+    padding: 1em 2em;
+    border-radius: 0.7em;
+}
+input::placeholder{
+    font-family: 'Poppins',sans-serif;
+}
+.submit-btn{
+    cursor: pointer;
+    padding: 1em 2em;
+    border: none;
+    color: #fafafa;
+    background-color: #ff004f;
+    border-radius: 0.5em;
+    font-weight: bold;
+    font-family: 'Poppins',sans-serif;
+    transition: all .3s ease;
+}
+h3{
+    font-size: 2rem;
+    text-decoration: overline;
+}
+.submit-btn:hover{
+    color: #ff004f;
+    background-color: #161618;
+}
+a{
+    color: #fafafa;
+}
